@@ -1,0 +1,144 @@
+=====================================
+#Spring-Boot.Starter
+    Intro and official starter list
+    https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot-starter
+    Creating Your Own Starter
+    https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-custom-starter
+
+=====================================
+#Spring-Boot.CLI
+
+Spring Boot CLI
+https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-cli.html
+
+Installing the Spring Boot CLI
+https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started-installing-the-cli
+
+Using
+https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-cli.html#cli-using-the-cli
+
+Релизы
+https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
+
+Adding Extensions to the CLI
+https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-cli.html#cli-install-uninstall
+
+    $ spring install com.example:spring-boot-cli-extension:1.0.0.RELEASE
+
+    $ spring uninstall com.example:spring-boot-cli-extension:1.0.0.RELEASE
+
+
+
+==========================================
+#Spring Cloud.CLI
+
+https://github.com/spring-cloud/spring-cloud-cli
+    Spring Boot CLI provides Spring Boot command line features for Spring Cloud.
+    You can write Groovy scripts to run Spring Cloud component applications (e.g. @EnableEurekaServer). You can also easily do things like encryption and decryption to support Spring Cloud Config clients with secret configuration values. With the Launcher CLI you can launch services like Eureka, Zipkin, Config Server conveniently all at once from the command line (very useful at development time).
+
+https://cloud.spring.io/spring-cloud-cli/reference/html/
+    Installation
+    To install, make sure you have Spring Boot CLI (2.0.0 or better)
+    and install the Spring Cloud plugin
+        $ mvn install
+        $ spring install org.springframework.cloud:spring-cloud-cli:2.2.0.BUILD-SNAPSHOT
+
+       Лучше ставить один и тот же релиз
+
+Релизы Spring Boot CLI
+https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-cli
+
+
+==========================================
+#Spring Cloud.CLI
+Introducing the Spring Cloud CLI Launcher
+    https://spring.io/blog/2016/11/02/introducing-the-spring-cloud-cli-launcher
+
+    Default Servers
+    If you run spring cloud without any arguments,
+    Config Server and Eureka are launched.
+
+    Config Server starts before other services so that it will available
+    so those other services can pull their configuration.
+
+
+==========================================
+#Spring Cloud.CLI
+https://www.baeldung.com/spring-cloud-cli
+    To make sure the CLI is installed and ready to use, simply run:
+        $ spring --version
+    After verifying your Spring Boot CLI installation, install the latest stable version of Cloud CLI:
+        $ spring install org.springframework.cloud:spring-cloud-cli:1.3.2.RELEASE
+    Then verify the Cloud CLI:
+        $ spring cloud --version
+    Advanced installation features can be found on the official Cloud CLI page!
+
+
+Seven Core Services
+    The CLI provides seven core services that can be run and deployed with single line commands.
+
+    To launch a Cloud Config server on http://localhost:8888:
+
+    1
+    $ spring cloud configserver
+    To start a Eureka server on http://localhost:8761:
+
+    1
+    $ spring cloud eureka
+    To initiate an H2 server on http://localhost:9095:
+
+    1
+    $ spring cloud h2
+    To launch a Kafka server on http://localhost:9091:
+
+    1
+    $ spring cloud kafka
+    To start a Zipkin server on http://localhost:9411:
+
+    1
+    $ spring cloud zipkin
+    To launch a Dataflow server on http://localhost:9393
+
+    1
+    $ spring cloud dataflow
+    To start a Hystrix dashboard on http://localhost:7979:
+
+    1
+    $ spring cloud hystrixdashboard
+
+
+    =======================================
+    Monitoring and Help:
+        List currently running cloud services:
+
+        1
+        $ spring cloud --list
+        The handy help command:
+
+        1
+        $ spring help cloud
+        For more details about these commands, please check out the official blog.
+
+================================================
+#Spring Cloud.CLI   #Spring-Boot.CLI #Experiments
+
+Find relases of same version
+   https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
+    https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-cli
+
+    2.2.1
+
+    Spring boot CLI
+    C:\soft\spring\spring-2.2.1.RELEASE
+
+    $ spring version
+    Spring CLI v2.2.1.RELEASE
+
+    $ spring install org.springframework.cloud:spring-cloud-cli:2.2.1.RELEASE
+
+    $ spring --help cloud
+
+    $ spring --debug cloud
+
+    Eureka
+    http://localhost:8761/
